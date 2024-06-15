@@ -45,3 +45,20 @@ If we add a second rule: when a cell of `ctype1` experiences pressure (from neig
 
 <img src="./images/model1_2rules.png" width="30%"><img src="./images/population_plot2.png" width="30%">
 
+# Model1: 2 rules + chemotaxis
+
+* Define a diffusing `signal` in the Microenv
+* Tell `ctype2` cells to chemotax toward it
+
+<img src="./images/microenv_signal.png" width="60%">
+<img src="./images/ctype2_chemotaxis.png" width="60%"> 
+
+Be sure to select `ctype2` as the ones chemotaxing
+
+<img src="./images/chemotax_9hr.png" width="30%"><img src="./images/chemotax_14hr.png" width="30%"><img src="./images/chemotax_1day.png" width="30%">
+
+
+
+
+
+
