@@ -8,6 +8,8 @@ This repository tries to provide some helpful guidance on using PhysiCell + Stud
 * [Studio basics video](https://www.youtube.com/watch?v=jkbPP1yDzME) (from PhysiCell 2023 workshop)
 * [Digitize your Biology preprint](https://www.biorxiv.org/content/10.1101/2023.09.17.557982v3) ("Rules" for cell behavior paper)
 
+Reminder: since simulations are stochastic (when `# threads` > 1), your results may not exactly match those shown here.
+
 # Model1: no rules vs. 1 rule
 
 <img src="./images/model1_t0.png" width="30%"> 
