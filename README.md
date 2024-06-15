@@ -22,7 +22,7 @@ After running the simulation for 1 day of simulation time:
 <img src="./images/model1_no_rules.png" width="30%">  <img src="./images/model1_1rule_plot.png" width="30%"> <img src="./images/population_plot1.png" width="30%">
 <br>
 Showing two different outcomes: no rules (left), 1 rule (right).
-I've also created a currently unused `ctype2`. We may have `ctype1` cells differentiate into `ctype2` under certain conditions.
+I've also created a currently unused `ctype2`. We will have `ctype1` cells differentiate into `ctype2` under certain conditions (next).
 <hr>
 
 Some key parameters:
