@@ -1,16 +1,47 @@
 # ohsu
 
-This repository tries to provide some helpful guidance on using PhysiCell + Studio, using a simple, illustrative model, with some sample analysis scripts (coming). If you do not yet have PhysiCell + Studio installed, you can try using this repo (https://github.com/rheiland/studio_template) and following the instructions there.
+This repository tries to provide some helpful guidance on using PhysiCell + Studio, using simple, illustrative models, with some sample analysis scripts (coming). If you do not yet have PhysiCell + Studio installed, you can try using this repo (https://github.com/rheiland/studio_template) and following the instructions there.
+
+# Background info
+
+* [PhysiCell Studio Guide](https://github.com/PhysiCell-Tools/Studio-Guide/blob/main/README.md)
+* [Studio basics video](https://www.youtube.com/watch?v=jkbPP1yDzME) (for PhysiCell 2023 workshop)
+* [Digitize your Biology preprint](https://www.biorxiv.org/content/10.1101/2023.09.17.557982v3) ("Rules" for cell behavior paper)
+
+# Model1: no rules vs. 1 rule
+
+<img src="./images/model1_t0.png" width="30%"> 
+
+Initial conditions (ICs) - randomly positioned cells of `ctype1` in the domain. Created using the ICs tab:<br>
+<img src="./images/create_ICs.png" width="50%"> 
+
+
+<hr>
+After running the simulation for 1 day of simulation time:
 
 <img src="./images/model1_no_rules.png" width="30%">  <img src="./images/model1_1rule_plot.png" width="30%"> <img src="./images/population_plot1.png" width="30%">
 <br>
-Showing two different outcomes, depending on whether a signal/behavior cell rule is used.
-I've created a currently unused `ctype2`. We may have `ctype1` cells differentiate into `ctype2` under certain conditions.
+Showing two different outcomes: no rules (left), 1 rule (right).
+I've also created a currently unused `ctype2`. We may have `ctype1` cells differentiate into `ctype2` under certain conditions.
 <hr>
 
+Some key parameters:
+* cell cycle leads to proliferation
+* cells are motile (with unbiased movement)
+* cells do not die: Death tab (not shown) - both Apoptosis and Necrosis death rates = 0
 <img src="./images/model1_cycle.png" width="60%">
 <img src="./images/model1_motility.png" width="60%">
 <hr>
 
-<img src="./images/model1_1rule.png" width="50%"> <img src="./images/rule_contact_attachrate.png" width="30%">
+<img src="./images/model1_1rule.png" width="60%"> <img src="./images/rule_contact_attachrate.png" width="30%">
+<br>
+1 rule: when one cell comes into contact with another, its (spring-like) attachment rate increases
+
+# Model1: 2 rules
+
+If we add a second rule: when a cell of `ctype1` experiences pressure (from neighboring cells), it differentiates (transforms to) `ctype2`
+
+<img src="./images/model1_2rules_tab.png" width="60%">
+
+<img src="./images/model1_2rules.png" width="30%"><img src="./images/population_plot2.png" width="30%">
 
