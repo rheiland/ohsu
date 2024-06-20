@@ -63,7 +63,9 @@ Be sure to select `ctype2` as the ones chemotaxing
 
 # Analysis
 
-We provide a Python script which performs a relatively simple analysis - it counts the (approx) number of "cell clusters":
+We provide a Python script which performs a relatively simple analysis - it counts the (approx) number of "cell clusters". The algorithm creates a graph 
+from the existing data. If two cells are < "predefined distance" from each other, an "edge" is created between them. We then use a connected components function
+from [networkx](https://networkx.org/) (an open source Python package for graph analysis) to tell us how many clusters are found.
 
 <img src="./images/model1_no_rules.png" width="30%">  <img src="./images/model1_1rule_plot.png" width="30%"> 
 
