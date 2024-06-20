@@ -1,6 +1,6 @@
 # ohsu
 
-This repository tries to provide some helpful guidance on using PhysiCell + Studio, using simple, illustrative models, with some sample analysis scripts (coming). If you do not yet have PhysiCell + Studio installed, you can try using this repo (https://github.com/rheiland/studio_template) and following the instructions there.
+This repository tries to provide some helpful guidance on using PhysiCell + Studio, using simple, illustrative models, with some analysis scripts. If you do not yet have PhysiCell + Studio installed, you can try using this repo (https://github.com/rheiland/studio_template) and following the instructions there.
 
 # Background info
 
