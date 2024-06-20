@@ -59,6 +59,23 @@ Be sure to select `ctype2` as the ones chemotaxing
 
 <img src="./images/chemotax_9hr.png" width="30%"><img src="./images/chemotax_14hr.png" width="30%"><img src="./images/chemotax_1day.png" width="30%">
 
+<hr>
+
+# Analysis
+
+We provide a Python script which performs a relatively simple analysis - it counts the (approx) number of "cell clusters":
+
+<img src="./images/model1_no_rules.png" width="30%">  <img src="./images/model1_1rule_plot.png" width="30%"> 
+
+```
+$ python clusters_conn_comp.py output_model1_1rule 0
+...
+for time=0.0: # of clusters for cell type 0 = 244
+
+$ python clusters_conn_comp.py output_model1_1rule 0
+...
+for time=1440.0: # of clusters for cell type 0 = 59
+```
 
 
 
