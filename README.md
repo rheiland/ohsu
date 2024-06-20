@@ -39,7 +39,7 @@ Some key parameters:
 <br>
 1 rule: when one cell comes into contact with another, its (spring-like) attachment rate increases
 
-# Model1: 2 rules
+# Model2: 2 rules, plus chemotaxis
 
 If we add a second rule: when a cell of `ctype1` experiences pressure (from neighboring cells), it differentiates (transforms to) `ctype2`
 
