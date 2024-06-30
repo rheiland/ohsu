@@ -70,7 +70,7 @@ from [networkx](https://networkx.org/) (an open source Python package for graph 
 <img src="./images/model1_no_rules.png" width="30%">  <img src="./images/model1_1rule_plot.png" width="30%"> 
 
 ```
-$ python clusters_conn_comp.py output_model1_1rule 0
+$ python clusters_conn_comp.py output_no_rules 0
 ...
 for time=0.0: # of clusters for cell type 0 = 244
 
